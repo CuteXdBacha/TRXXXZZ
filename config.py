@@ -7,21 +7,21 @@ load_dotenv()
 # VARS
 
 get_queue = {}
-BOT_TOKEN = getenv("BOT_TOKEN")
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "10"))
+BOT_TOKEN = getenv("BOT_TOKEN", "5888890044:AAHPxrsoU-IvZuBhdN1G2DQDjN0xnzAhbnk")
+API_ID = int(getenv("API_ID", "26363266"))
+API_HASH = getenv("API_HASH", "f7efe49e1daeccc0ff64da9004e3c517")
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900999999999999999999999"))
 ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
-MONGO_DB_URI = getenv("MONGO_DB_URI")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Music:Music@cluster0.f9x4i.mongodb.net/Cluster0?retryWrites=true&w=majority")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5548606006").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5548606006").split()))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001801920807"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "TRX-MUSIC")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO", "https://github.com/NotReallyShikhar/YukkiMusicBot"
+    "UPSTREAM_REPO", "https://github.com/CuteXdBacha/TRXXXZZ"
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -35,7 +35,7 @@ else:
     SUPPORT_GROUP = str(getenv("SUPPORT_GROUP"))
 
 
-if str(getenv("STRING_SESSION1")).strip() == "":
+if str(getenv("STRING_SESSION1", "BQAcTl8Cm3rgmtolusr54dyLdqWar8hHJhqQOd1FQgGm7C0bUclqtD8ouU-S-RFN0xmmEaBSdx11iHzyBj4VH5V4lu7FZk7e0qJ6T7rVQLTT0nhbGsCF1CwsHIFogmbgFCl2di7Ag8TW2CGWrIHwRlBZoxlXissKqhNuy2WnhzHJNOUnFQVTAfSIR9zS1vZdwMqwW15U-ql2RTUwXTaS0jYozlr1sL-WJhuHkHa_auDYOTKWCjDWle82rMSxpBi4VQfAdWimWORUsR2MvmpDhhk8O__cqaoT3bkcNSgelWgnaInikJmZEUUoOrt55Y7dww8MS7-4LE6n16XPbPTtBqolAAAAAWHNMOIA")).strip() == "":
     STRING1 = str(None)
 else:
     STRING1 = str(getenv("STRING_SESSION1"))
