@@ -35,10 +35,10 @@ else:
     SUPPORT_GROUP = str(getenv("SUPPORT_GROUP"))
 
 
-if str(getenv("STRING_SESSION1", "BQAcTl8Cm3rgmtolusr54dyLdqWar8hHJhqQOd1FQgGm7C0bUclqtD8ouU-S-RFN0xmmEaBSdx11iHzyBj4VH5V4lu7FZk7e0qJ6T7rVQLTT0nhbGsCF1CwsHIFogmbgFCl2di7Ag8TW2CGWrIHwRlBZoxlXissKqhNuy2WnhzHJNOUnFQVTAfSIR9zS1vZdwMqwW15U-ql2RTUwXTaS0jYozlr1sL-WJhuHkHa_auDYOTKWCjDWle82rMSxpBi4VQfAdWimWORUsR2MvmpDhhk8O__cqaoT3bkcNSgelWgnaInikJmZEUUoOrt55Y7dww8MS7-4LE6n16XPbPTtBqolAAAAAWHNMOIA")).strip() == "":
+if str(getenv("STRING_SESSION1")).strip() == "":
     STRING1 = str(None)
 else:
-    STRING1 = str(getenv("STRING_SESSION1"))
+    STRING1 = str(getenv("STRING_SESSION1", "BQAcTl8Cm3rgmtolusr54dyLdqWar8hHJhqQOd1FQgGm7C0bUclqtD8ouU-S-RFN0xmmEaBSdx11iHzyBj4VH5V4lu7FZk7e0qJ6T7rVQLTT0nhbGsCF1CwsHIFogmbgFCl2di7Ag8TW2CGWrIHwRlBZoxlXissKqhNuy2WnhzHJNOUnFQVTAfSIR9zS1vZdwMqwW15U-ql2RTUwXTaS0jYozlr1sL-WJhuHkHa_auDYOTKWCjDWle82rMSxpBi4VQfAdWimWORUsR2MvmpDhhk8O__cqaoT3bkcNSgelWgnaInikJmZEUUoOrt55Y7dww8MS7-4LE6n16XPbPTtBqolAAAAAWHNMOIA")
 
 if str(getenv("STRING_SESSION2")).strip() == "":
     STRING2 = str(None)
